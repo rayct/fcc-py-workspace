@@ -25,6 +25,7 @@
 
 
 # Python Dictionaries
+# Key, Colon, Value
 dict = {"Fri": 20, "Thu": 6, "Sat": 1, "Sun": 9, "Mon": 8}
 dict["Thu"] = 13
 dict["Sat"] = 2
