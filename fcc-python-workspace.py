@@ -37,3 +37,16 @@
 
 
 # Dictionaries: Common Applications
+# The get method for dictionaries
+# Default value if key does not exist(and no traceback)
+# counts = { 'quincy' : 1 , 'mrugesh' : 42, 'beau': 100, '0': 10}
+# print(counts.get('kris', 0))
+
+
+
+
+# Dictionaries and Loops
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+for key in counts:
+    if counts[key] > 10:
+        print(key, counts[key])
