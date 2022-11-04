@@ -138,22 +138,22 @@
 # Installation
 # pip install pyqt5
 
-# from PyQt5.QtWidgets import QApplication,  QMainWindow
-# import sys
-# from PyQt5 import QtGui
+from PyQt5.QtWidgets import QApplication,  QMainWindow
+import sys
+from PyQt5 import QtGui
 
-# class Window(QMainWindow):
-#     def __init__(self):
-#         super().__init__()
+class Window(QMainWindow):
+    def __init__(self):
+        super().__init__()
 
-#         self.setGeometry(300, 300, 500, 400)
-#         self.setWindowTitle("PyQt5 Window")
+        self.setGeometry(300, 300, 500, 400)
+        self.setWindowTitle("PyQt5 Window")
 
-#         self.show()
+        self.show()
 
-# App = QApplication(sys.argv)
-# window = Window()
-# sys.exit(App.exec())
+App = QApplication(sys.argv)
+window = Window()
+sys.exit(App.exec())
 
 
 # ***********
@@ -169,15 +169,15 @@
 # Installation
 # It is a built in library in python, no need to install
 
-# from tkinter import *
+from tkinter import *
 
-# class Root(Tk):
-#     def __init__(self):
-#         super(Root, self).__init__()
-#         self.title("Python Tkinter First Window")
-#         self.minsize(640, 400)
-# root = Root()
-# root.mainloop()
+class Root(Tk):
+    def __init__(self):
+        super(Root, self).__init__()
+        self.title("Python Tkinter First Window")
+        self.minsize(640, 400)
+root = Root()
+root.mainloop()
 
 
 
@@ -192,23 +192,23 @@
 # Installation
 # pip install PySide2
 
-# from PySide2.QtWidgets import QApplication,QWidget
-# import sys
-# import time
+from PySide2.QtWidgets import QApplication,QWidget
+import sys
+import time
 
-# class Window(QWidget):
-#     def __init__(self):
-#         super().__init__()
+class Window(QWidget):
+    def __init__(self):
+        super().__init__()
 
-#         self.setWindowTitle("Pyside2 Simple Application Expose C++ Apps")
-#         self.setGeometry(300,300,500,400)
+        self.setWindowTitle("Pyside2 Simple Application Expose C++ Apps")
+        self.setGeometry(300,300,500,400)
 
 
-# myApp = QApplication(sys.argv)
-# window = Window()
-# window.show()
-# myApp.exec_()
-# sys.exit(0)
+myApp = QApplication(sys.argv)
+window = Window()
+window.show()
+myApp.exec_()
+sys.exit(0)
 
 
 
@@ -232,15 +232,15 @@
 # pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
 # pip install Kivy
 
-# from kivy.app import App
-# from kivy.uix.button import Button
+from kivy.app import App
+from kivy.uix.button import Button
 
-# class TestApp(App):
-#     def build(self):
-#         return Button(text = "Hello Kivy World from Ray Turner")
+class TestApp(App):
+    def build(self):
+        return Button(text = "Hello Kivy World from Ray Turner")
 
 
-# TestApp().run()
+TestApp().run()
 
 
 
@@ -268,15 +268,9 @@ class MyFrame(wx.Frame):
 
         self.panel = MyPanel(self)
 
-
-
-
-
 class MyPanel(wx.Panel):
     def __init__(self, parent):
         super(MyPanel, self).__init__(parent)
-
-
 
 
 class MyApp(wx.App):
@@ -284,8 +278,6 @@ class MyApp(wx.App):
         self.frame = MyFrame(parent=None, title="wxPython Window: By Ray Turner")
         self.frame.Show()
         return True
-
-
 
 app = MyApp()
 app.MainLoop()
