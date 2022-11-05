@@ -123,7 +123,7 @@ import socket
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 mysock.connect(('data.pr4e.org', 80))
-cmd = 'GET https://www.ellatronix.com/notes.txt HTTP/1.0\r\n\r\n'.encode()
+cmd = 'GET http://data.pr4e.org/romeo.txt  HTTP/1.0\r\n\r\n'.encode()
 mysock.send(cmd)
 
 while True:
@@ -135,6 +135,18 @@ mysock.close()
 print(mysock)
 
 # https://data.pr4e.org/romeo.txt
+# https://www.ellatronix.com/notes.txt
+
+
+
+
+
+
+
+
+
+
+
 
 
 
