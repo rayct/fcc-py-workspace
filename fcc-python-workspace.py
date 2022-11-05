@@ -105,17 +105,50 @@
 
 # Regular Expressions: Matching and Extracting Data
 
-import re
-s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
-lst = re.findall('\\S+@\\S+', s)
-print(lst)
+# import re
+# s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
+# lst = re.findall('\\S+@\\S+', s)
+# print(lst)
+
+
+# Regular Expressions: Practical Applications
+# What will search for a "$" in a regular expression?
+# \$
+
+
+# Networking with Python
+
+# Networking: Write a Web Browser
+import socket
+
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('data.pr4e.org', 80))
+cmd = 'GET https://www.ellatronix.com/notes.txt HTTP/1.0\r\n\r\n'.encode()
+mysock.send(cmd)
+
+while True:
+    data = mysock.recv(512)
+    if len(data) < 1:
+        break
+    print(data.decode(),end='')
+mysock.close()
+print(mysock)
+
+# https://data.pr4e.org/romeo.txt
 
 
 
 
 
 
-        
+
+
+
+
+
+
+
+
 
 
 
