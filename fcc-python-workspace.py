@@ -118,7 +118,7 @@
 
 # Networking with Python
 
-# Networking: Write a Web Browser
+# Networking: Write a Web Browser using Sockets
 # import socket
 
 # mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -144,11 +144,16 @@
 # print(ord('%'))
 
 
-# Networking: Using urllib in Python
+# Networking: Using urllib in Python and some Web Scrapping
 import urllib.request
-fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+fhand = urllib.request.urlopen('https://www.ellatronix.com/index.html')
 for line in fhand:
     print(line.decode().strip())
+#     print(fhand)
+
+
+# Networking: Web Scraping with Python
+
 
 
 
