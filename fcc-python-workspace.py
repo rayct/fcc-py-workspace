@@ -145,38 +145,43 @@
 
 
 # Networking: Using urllib in Python and some Web Scrapping
-import urllib.request
-fhand = urllib.request.urlopen('https://www.ellatronix.com/index.html')
-for line in fhand:
-    print(line.decode().strip())
+# 
 #     print(fhand)
 
 
 # Networking: Web Scraping with Python and html parsing, string parsing and split, RegX.
 
 
+# Web Services: XML Schema
+# What is XSD.?
+# Answer: The W3C Schema Specification for XML
+
+# Web Services: JSON
+
+# import json
+# data = '''
+#   [
+#     { "id" : "001",
+#       "x" : "2",
+#      "name" : "Quincy"
+#     } ,
+#     { "id" : "009",
+#       "x" : "7",
+#       "name" : "Mrugesh"
+#     }
+#   ]
+# '''
+# info = json.loads(data)
+# print(info[1]['name'])
 
 
+# Web Services: Service Oriented Approach
 
+# Web Services: APIs = Application Program Interface
 
+# Web Sevices: API Rate Limiting and Security
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Python Objects: Objects are one of the five standard data types
 
 
 
