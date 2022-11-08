@@ -186,8 +186,16 @@
 
 # Python Objects: Objects are one of the five standard data types
 
-
-
+# Objects: A Simple Class
+class PartyAnimal:
+    x = 0
+    def party(self):
+        self.x = self.x + 2
+        print(self.x)
+        
+an = PartyAnimal()
+an.Party()
+an.Party()
 
 
 
