@@ -1,3 +1,6 @@
+# freeCodeCamp - Scientific Computing with Python
+
+
 
 # Strings and Lists
 
@@ -182,6 +185,41 @@
 # Web Sevices: API Rate Limiting and Security
 
 # Python Objects: Objects are one of the five standard data types
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
