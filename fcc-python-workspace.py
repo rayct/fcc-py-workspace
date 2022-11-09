@@ -187,18 +187,48 @@
 # Python Objects: Objects are one of the five standard data types
 
 # Objects: A Simple Class
+# class PartyAnimal:
+#     x = 0
+#     def party(self):
+#         self.x = self.x + 2
+#         print(self.x)
+        
+# an = PartyAnimal()
+# an.Party()
+# an.Party()
+
+
+# Object Lifecycle
+# Constructors
+# Destructors
 class PartyAnimal:
     x = 0
+    name = ''
+    def __init__(self, nam):
+        self.name = nam
+        print(self.name,'constructed')
     def party(self):
-        self.x = self.x + 2
-        print(self.x)
-        
-an = PartyAnimal()
-an.Party()
-an.Party()
+        self.x = self.x + 1
+        print(self.name,'party count',self.x)
+
+q = PartyAnimal('Quincy')
+m = PartyAnimal('Miya')
+
+q.party()
+m.party()
+q.party()
+# Output:
+
+# Quincy constructed
+# Miya constructed
+# Quincy party count 1
+# Miya party count 1
+# Quincy party count 2
 
 
-
+# Objects: Inheritance
+# What is inheritance in object-oriented programming?
+# The ability to create a new class by extending an existing class.
 
 
 
