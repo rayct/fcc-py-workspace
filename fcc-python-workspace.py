@@ -201,22 +201,22 @@
 # Object Lifecycle
 # Constructors
 # Destructors
-class PartyAnimal:
-    x = 0
-    name = ''
-    def __init__(self, nam):
-        self.name = nam
-        print(self.name,'constructed')
-    def party(self):
-        self.x = self.x + 1
-        print(self.name,'party count',self.x)
+# class PartyAnimal:
+#     x = 0
+#     name = ''
+#     def __init__(self, nam):
+#         self.name = nam
+#         print(self.name,'constructed')
+#     def party(self):
+#         self.x = self.x + 1
+#         print(self.name,'party count',self.x)
 
-q = PartyAnimal('Quincy')
-m = PartyAnimal('Miya')
+# q = PartyAnimal('Quincy')
+# m = PartyAnimal('Miya')
 
-q.party()
-m.party()
-q.party()
+# q.party()
+# m.party()
+# q.party()
 # Output:
 
 # Quincy constructed
@@ -232,6 +232,14 @@ q.party()
 
 
 
+daily = [3,1,2,4,5]
+co = [daily,3,2,1]
+
+co[1] =3
+daily[3]= 1
+co[2]= 2
+
+print((sum(co[0])+co[1]+co[2]) % 5)
 
 
 
